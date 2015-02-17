@@ -1,0 +1,55 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper {
+	margin: 0px;
+	padding: 0px;
+	background-color: #D3D3D3;
+	clear: both;
+	
+}
+.content {
+	margin: 0px 90px;
+	padding: 0px 10px;;
+	background-color: #ffffff;
+	clear: both;
+	position: relative;
+}
+.header {
+	text-align: center;
+}
+.header h1 {
+	margin-top: 0px;
+	padding-top: 10px;
+}
+.inputs {
+	width: 60%;
+	float: left;
+	position: relative;
+	
+}
+.totals {
+	width: 40%;
+	float: left;
+	position: relative;
+	
+}
+.totals h2 {
+	
+}
+#incomeAmount {
+	color: green;
+}
+#totalExpenses {
+	color: red;
+}
+#leftOver {
+	color: blue;
+}
+.expenselistitem p {
+	display: inline-block;
+}
+.expenselistitem input:not(:checked) + p{
+	text-decoration: line-through;
+}

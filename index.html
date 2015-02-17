@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>project start</title>
+	<link rel="stylesheet" type="text/css" href="shared/css/style.css">
+	<script src="shared/js/jquery-1.11.2.js"></script>
+	<script src="shared/js/script.js"> </script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<h1>Budget Application</h1>
+			</div><!--end header-->
+			<div class="inputs">
+				<div class="income">
+					<h2>Monthly Income</h2>
+					<div class="incomeFunctions">
+						<div class="incomeForm" >
+							<label>Source: </label>
+							<input type="text" name="incomeSource" />
+							<label>Take Home: </label>
+							<input type="number" name="incomeAmount" />
+							<input type="radio" name="payperiod" value="4" />/wk
+							<input type="radio" name="payperiod" value="1"/>/mo
+							<input type="radio" name="payperiod" value="12"/>/yr
+							<button onclick="addIncome()">Submit</button>
+						</div><!--end incomeForm-->
+					</div><!--end incomeFunctions-->
+					<div class="incomelist">
+					
+					</div><!--end incomelist-->
+				
+				</div><!--end income-->
+				
+				<div class="Expenses">
+					<h2>Monthly Expenses</h2>
+					<div class="expensefunctions">
+						<div id="expenseForm">
+							<label>Name: </label>
+							<input type="text" name="expenseName" />
+							<label>Amount: </label>
+							<input type="number" name="expenseAmount" />
+							<input type="submit" value="Submit" onclick="addExpense()">
+						</div><!--end expenseForm-->
+					</div><!--end expensefunctions-->
+					<div class="expenselist">
+					
+					</div><!--end expenselist-->
+				
+				</div><!--end expenses-->
+			</div><!--end inputs-->
+			<div class="totals">
+				<h2>Totals for the Month </h2>
+				<div class="moneyleft">
+					<h5>Income: <span id="incomeAmount"></span></h5>
+					<h5>Total Expenses: <span id="totalExpenses"></span></h5>
+					<hr>
+					<h5>Leftover: <span id="leftOver"></span></h5>
+				</div><!--end moneyleft-->
+			</div><!--end totals-->
+		</div><!--end content-->
+	</div><!--end wrapper-->
+</body>
+</html>
